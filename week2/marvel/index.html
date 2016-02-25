@@ -13,13 +13,16 @@
         header {
             color:yellow; 
             display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: space-between;
         }
         
         header:first-child {
             justify-content: flex-start;   
         }
         
-        header div.date {
+        header:nth-child(2) {
             justify-content: flex-end;   
         }
         
@@ -33,6 +36,7 @@
         ul li {
             background-image:url(http://cdn2-www.comingsoon.net/assets/uploads/2015/03/avengersorder5.jpg);
             background-size:cover;
+            background-position: center center;
             height:200px;
             background-repeat: no-repeat;            
             justify-content: flex-start;
@@ -45,10 +49,18 @@
         
         h2 {
             display: flex;
-            font-size:1.5em;
-            max-width:250px;
-            padding:10px;
+            font-size:1.4em;
+            max-width:270px;
+            
         }
+        
+        .textInside {
+            padding:10px; 
+        }
+        
+        .textInside p {
+            color:yellow;
+        }    
         
         .half {
             flex: 1 0 45%;
@@ -83,61 +95,109 @@
         #wolverine {
             background-image:url(background.jpg);  
         }
+        
+        #hulk {
+            background-image: url(hulk.jpg);   
+        }
+        
+        #kickass {
+            background-image: url(kickass.jpg);   
+        }
+        
+        #thor {
+            background-image:url(thor.jpg);   
+        }
+        
+        #spiderman {
+            background-image:url(spiderman.jpg);   
+        }
+        
+        #watchmen {
+            background-image:url(watchmen.jpg);   
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div>From the frontlines</div>
-            <img src="" class="logo">
-            <div class="date">July 17, 2013</div>
+           <div>From the frontlines</div>
+            
+            <!--<img src="" class="logo">-->
+            <div class="date"><div>July 17, 2013</div></div>
         </header>
         
         <div class="items">
             <ul>
                 <li class="half" id="superman">
                    <div class="overlay">
+                   <div class="textInside">
+                    <p>TOP STORY</p>
                     <h2>'MAN OF STEEL' STEALS THE SCREEN</h2>
+                       </div>
                     </div>
                 </li>
                 <li class="half" id="batman">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>EXCLUSIVE</p>
                     <h2>CHRISTOPHER NOLAN TALKS THE FUTURE OF BADMAN</h2>
+                       </div>
                     </div>
                 </li>
                 <li class="quarter" id="wolverine">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>COMING SOON</p>
                     <h2>THE WOLVERINE 2013</h2>
+                       </div>
                     </div>
                 </li>
-                <li class="quarter">
+                <li class="quarter" id="watchmen">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>HEADLINE NEWS</p>
                     <h2>WATCHMEN ON NETFLIX</h2>
+                       </div>
                     </div>
                 </li>
-                <li class="quarter">
+                <li class="quarter" id="hulk">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>STORYLINES</p>
                     <h2>THE BIG GUY GETS BIGGER</h2>
+                       </div>
                     </div>
                 </li>
-                <li class="quarter">
+                <li class="quarter" id="kickass">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>COMMENTARY</p>
                     <h2>COMMEDICS OF COMICS</h2>
+                       </div>
                     </div>
                 </li>
-                <li class="third">
+                <li class="third" id="thor">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>EXCLUSIVE</p>
                     <h2>THOR CLASH</h2>
+                       </div>
                     </div>
                 </li>
                 <li class="third">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>COMMENTARY</p>
                     <h2>AVENGING THE FIRE</h2>
+                       </div>
                     </div>
                 </li>
-                <li class="third">
+                <li class="third" id="spiderman">
                    <div class="overlay">
+                   <div class="textInside">
+                   <p>STORYLINES</p>
                     <h2>SPIDEY'S ROMANCE</h2>
+                       </div>
                     </div>
                 </li>
             </ul>
