@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            background-image:url(11048-the-avengers-1920x1080-movie-wallpaper.jpg);
+            font-family:"Lato";
+        }
+        
+        header {
+            color:yellow; 
+            display: flex;
+        }
+        
+        header:first-child {
+            justify-content: flex-start;   
+        }
+        
+        header div.date {
+            justify-content: flex-end;   
+        }
+        
+        ul {
+            display:flex;
+            flex-flow: row wrap;
+            margin:0px;
+            flex: 1;
+        }
+        
+        ul li {
+            background-image:url(http://cdn2-www.comingsoon.net/assets/uploads/2015/03/avengersorder5.jpg);
+            background-size:cover;
+            height:200px;
+            background-repeat: no-repeat;            
+            justify-content: flex-start;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            color:white;
+            margin:10px;
+        }
+        
+        h2 {
+            display: flex;
+            font-size:1.5em;
+            max-width:250px;
+            padding:10px;
+        }
+        
+        .half {
+            flex: 1 0 45%;
+        }
+        
+        .quarter {
+            flex: 1 0 20%;
+        }
+        
+        .third {
+            flex: 1 0 28%;
+        }
+        
+        .overlay {
+    background: transparent;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.7) 100%);
+    box-sizing:border-box;
+            display:flex;
+            align-items: flex-end;
+            flex-grow: 1;
+}
+        
+        #superman {
+            background-image:url(Superman-Man-of-Steel-2-Sequel-George-Miller.jpg);   
+        }
+        
+        #batman {
+            background-image:url(2d7gg0o.jpg);  
+        }
+        
+        #wolverine {
+            background-image:url(background.jpg);  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>From the frontlines</div>
+            <img src="" class="logo">
+            <div class="date">July 17, 2013</div>
+        </header>
+        
+        <div class="items">
+            <ul>
+                <li class="half" id="superman">
+                   <div class="overlay">
+                    <h2>'MAN OF STEEL' STEALS THE SCREEN</h2>
+                    </div>
+                </li>
+                <li class="half" id="batman">
+                   <div class="overlay">
+                    <h2>CHRISTOPHER NOLAN TALKS THE FUTURE OF BADMAN</h2>
+                    </div>
+                </li>
+                <li class="quarter" id="wolverine">
+                   <div class="overlay">
+                    <h2>THE WOLVERINE 2013</h2>
+                    </div>
+                </li>
+                <li class="quarter">
+                   <div class="overlay">
+                    <h2>WATCHMEN ON NETFLIX</h2>
+                    </div>
+                </li>
+                <li class="quarter">
+                   <div class="overlay">
+                    <h2>THE BIG GUY GETS BIGGER</h2>
+                    </div>
+                </li>
+                <li class="quarter">
+                   <div class="overlay">
+                    <h2>COMMEDICS OF COMICS</h2>
+                    </div>
+                </li>
+                <li class="third">
+                   <div class="overlay">
+                    <h2>THOR CLASH</h2>
+                    </div>
+                </li>
+                <li class="third">
+                   <div class="overlay">
+                    <h2>AVENGING THE FIRE</h2>
+                    </div>
+                </li>
+                <li class="third">
+                   <div class="overlay">
+                    <h2>SPIDEY'S ROMANCE</h2>
+                    </div>
+                </li>
+            </ul>
+            <p>&copy; 2016 - Yaron Dassonneville</p>
+        </div>
+    </div>
+</body>
+</html>
