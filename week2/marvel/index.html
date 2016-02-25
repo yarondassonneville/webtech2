@@ -13,18 +13,16 @@
         header {
             color:yellow; 
             display: flex;
-            flex-direction: row;
-            flex-grow: 1;
-            justify-content: space-between;
+            flex-direction: column;
         }
         
-        header:first-child {
+        /*header:first-child {
             justify-content: flex-start;   
         }
         
         header:nth-child(2) {
             justify-content: flex-end;   
-        }
+        }*/
         
         ul {
             display:flex;
@@ -115,15 +113,66 @@
         #watchmen {
             background-image:url(watchmen.jpg);   
         }
+        
+        .hamMedia {
+            display:flex;
+            flex:1;
+            width:100%;
+            justify-content: space-between;
+        }
+        
+        .hamburgerAround {
+            justify-content: flex-start;
+        }
+        
+        .hamburger {
+            background-image:url(1456449062_menu-alt.svg);
+            width:25px;
+            height:25px;
+            margin-top:10px;
+        }
+        
+        .textAround {
+            margin:20px 0px 5px 0px;
+            padding:0px 25px;
+            display:flex;
+            flex:0;
+            justify-content: space-between;
+        }
+        
+        @media (min-width: 1000px) {
+            header {
+                margin:10px;   
+            }
+            
+             .container {
+                width:80%;
+                margin:0px auto;
+            }   
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+          <div class="hamMedia">
+             <div class="hamburgerAround">
+              <div class="hamburger">
+                  
+              </div>
+              </div>
+              <div class="social">
+                  <a href="twitter.com">Twitter</a>
+                  <a href="facebook.com">Facebook</a>
+              </div>
+          </div>
+
+          <div class="textAround">
            <div>From the frontlines</div>
             
             <!--<img src="" class="logo">-->
             <div class="date"><div>July 17, 2013</div></div>
+            </div>
         </header>
         
         <div class="items">
