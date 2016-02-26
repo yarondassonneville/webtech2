@@ -3,6 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>IMDstagram</title>
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+    <style>
+        .logo {
+            display: flex;
+            font-weight:bold;
+            font-size:1.5em;
+            justify-content: center;
+            margin:25px 0px;
+        }
+        
+        .container nav {
+            
+        }
+        
+        .container nav ul {
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+        }
+        
+        ul li:first-child {
+            width:100%;
+            align-self: center;
+        }
+        
+        li {
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+        }
+        
+        section {
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+            align-content: space-between;
+        }
+        
+        section div {
+            /*display:flex;
+            justify-content: center;
+            flex-wrap:wrap;*/
+            align-content:space-between;
+            justify-content: space-between;
+        }
+        
+        img {
+            width:250px;
+            margin:10px;
+        }
+        
+        
+        @media (min-width: 600px) {
+            li {
+                display:flex;
+                justify-content:space-around;
+                flex-wrap:nowrap;    
+            }
+            
+            li .typography {
+                order:1;   
+            }
+            
+            li .ui {
+                order:2;   
+            }
+            
+            .logo {
+                order:3;
+                font-size:1em;
+                margin:0px 0px;
+            }
+            
+            li .branding {
+                order:4;   
+            }
+            
+            li .graffiti {
+                order:5;   
+            }
+        }
+    </style>
 </head>
 <body>
         <div class="container">
