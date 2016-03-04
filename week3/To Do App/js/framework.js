@@ -96,14 +96,14 @@ WrapperElement.prototype.click = function(callback){
         }
 
 WrapperElement.prototype.val = function(text)
-{
+{    
     if(this.isArray)
     {
         for(var i = 0; i<this.element.length; i++)
 		{
 			if(text == ""){
-        this.element[i].value = "";
-    }else{
+                this.element[i].value = "";
+    } else {
 	   return this.element[i].value;
     }
 		}
