@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WeatherFashion</title>
+	<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<style>
+        @font-face {
+	  font-family: "iconvault";
+	  src: url("iconvault_forecastfont.eot");
+	  src: url("iconvault_forecastfont.eot?#iefix") format("embedded-opentype"),
+	       url("iconvault_forecastfont.woff") format("woff"),
+	       url("iconvault_forecastfont.ttf") format("truetype"),
+	       url("iconvault_forecastfont.svg#iconvault") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+        
+        body{
+            /*background-color: white;*/
+            color: black;
+            font-family: Raleway;
+            background-image:url(1920x1200-data_images-out-17-917797-weather-wallpaper.jpg);
+            background-position: center;
+            background-size:cover;
+            width:100%;
+            height:100vh;
+        }
+        
+        .weather{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        header {
+            background-color:#393939;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .clearfix {
+            clear:both;
+        }
+        
+        .place {
+            margin-left:-50px;
+            padding:12px 0px;
+            font-size:1.4em;
+            color:white;
+        }
+        
+        .clothes {
+            float:left;
+            width:40%;
+        }
+        
+        .weatherInfo {
+            float:right;
+            width:55%;
+            text-align:center;
+            color:#393939;
+            background: rgba(255,255,255,0.60);
+            margin:20px 10px 0px 0px;
+            padding:20px 5px 20px 5px;
+        }
+        
+        #temp {
+            font-size:3em;
+            margin-bottom:20px;
+        }
+        
+        .hamburger {
+            padding:12px 10px 8px 10px;
+        }
+        
+        .minMax {
+            margin-bottom:20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #min {
+            margin-right: 5px;
+        }
+        
+        #max {
+            margin-left: 5px;
+        }
+        
+        .hamburger span {
+            width:30px;
+            height:4px;
+            background-color:white;
+            display: block;
+            margin:0px 0px 5px 0px;
+        }
+        
+        .icon {
+            
+        }
+    
+    </style>
+</head>
+<body>
+	<header>
+	    <div class="hamburger">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	    </div>
+	    <div class="place"></div>
+	    <div class="otherPlace"></div>
+	</header>
+	<section>
+        <div class="niceInfo">
+            <div class="clothes">
+                <img style="width:100%;margin:10px 0px 0px 0px" alt="" class="imgClothes">
+            </div>
+            <div class="weatherInfo">
+                <h1 id="temp"></h1>
+                <div class="minMax">
+                    <p id="min"></p>
+                    <p>|</p>
+                    <p id="max"></p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="weatherType">
+                    <p id="summary"></p>
+                    <img class="icon" style="width:50px;">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="js/skycons.js"></script>
+	<script src="js/start.js"></script>
+
+</body>
+</html>
