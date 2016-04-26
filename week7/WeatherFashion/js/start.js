@@ -31,21 +31,19 @@
                 success: function (data) {
                     //console.log(data);
                     $("#summary").text(data.currently.summary);
-                    App.getPlaceName();
                    
                     var temp = (data.currently.temperature - 32) * 5 / 9;
                     $("#temp").text(Math.round(temp) + " °C");
-                    App.getPlaceName();
                     
                     var tempMax = (data.daily.data[0].temperatureMax - 32) * 5 / 9;
                     $("#max").text("Max " + Math.round(tempMax) + " °C");
-                    App.getPlaceName();
                     
                     var tempMin = (data.daily.data[0].temperatureMin - 32) * 5 / 9;
                     $("#min").text("Min " + Math.round(tempMin) + " °C");
                     
                     var tempTomorrow = (data.daily.data[1].temperatureMax - 32) * 5 / 9;
                     $(".tomorrowTemp").text("Max " + Math.round(tempTomorrow) + " °C");
+                    
                     App.getPlaceName();
                     
                     switch (data.currently.icon) {
@@ -100,7 +98,7 @@
                 url: link,
                 dataType: "json",
                 success: function (data) {
-                    $(".place").text(data.results[0].address_components[2].short_name);
+                   localStorage.setItem('placename',data.results[0].address_components[2].short_name); $(".place").text(data.results[0].address_components[2].short_name);
                 }
             });
         }
